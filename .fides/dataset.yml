@@ -1,0 +1,20 @@
+dataset:
+- fides_key: analytics
+  organization_fides_key: default_organization
+  name: analytics
+  description: The analytics schema housing tables for the data warehouse and business intelligence tooling.
+  collections:
+  - name: user_logins
+    fields:
+    - name: id
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized
+    - name: user_uuid
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized
+    - name: login_at
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized

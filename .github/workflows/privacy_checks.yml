@@ -1,11 +1,8 @@
 name: Privacy Checks
 on:
-  # pull_request:
-  #   branches:
-  #     - main
-  push:
+  pull_request:
     branches:
-      - workflow-local-evaluate
+      - main
 
 jobs:
   privacy-checks:
